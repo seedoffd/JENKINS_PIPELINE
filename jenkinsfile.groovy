@@ -9,8 +9,8 @@ node {
 
         }
 
-    stage("start Apace"){
-        sh "ssh ec2-user@${DEVIP}    sudo systemctl start htppd"
+    stage("start apache"){
+        sh "ssh ec2-user@${DEVIP}    sudo systemctl start httpd"
 
         }
 
