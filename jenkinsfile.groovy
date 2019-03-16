@@ -1,4 +1,4 @@
 node {
-    agent any
-    sh "echo hello"
+    stage("pull git")
+       git "git@github.com:seedoffd/Jenkins-website.git"
 }
