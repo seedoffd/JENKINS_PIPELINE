@@ -1,4 +1,5 @@
 node {
+    properties([parameters([string(defaultValue: '127.0.0.1', description: 'this is parameter', name: 'DEVIP', trim: true)])])
     stage("pull git"){
        git "git@github.com:seedoffd/Jenkins-website.git"
 
